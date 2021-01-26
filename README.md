@@ -1,7 +1,7 @@
 ```bash
 yarn server
 
-// in parallel
+# in parallel
 yarn build
 yarn start
 ```
