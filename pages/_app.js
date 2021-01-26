@@ -8,6 +8,8 @@ function MyApp({ Component, pageProps }) {
       <Link href='/'>Main page</Link>
       {` | `}
       <Link href='/popular'>Popular</Link>
+      {` | `}
+      <Link href='/static-page'>Static page</Link>
     </nav>
     <Component {...pageProps} />
   </div>);

@@ -30,6 +30,13 @@ app.get('/popular', function (req, res) {
     res.end(JSON.stringify(popularData));
 });
 
+app.get('/static-data', function (req, res) {
+    const data = {
+        data: 'Hello, I am static data',
+    }
+    res.end(JSON.stringify(data));
+})
+
 app.get('/games', function (req, res) {
     let client = "browser"
     if (req.header('User-Agent').includes("node-fetch")) {
